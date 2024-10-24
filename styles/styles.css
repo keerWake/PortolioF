@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    padding: 10px;
+    background-color: #7678ed;
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.navbar{
+    display: grid;
+    justify-content: end;
+    align-items: start;
+
+}
+
+.nav-links{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 30px;
+}
+
+button{
+    background-color: #f7b801;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #f18701;
+}
+
+
+/*ABOUT ME*/
+.aboutMe{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+h2{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.aboutMeDescrip{
+
+    padding: 10px;
+    margin: 10px;
+}
+
+/*Projects*/
+#projectHeading{
+    text-align: center;
+    font-size: 40px;
+}
+.projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+    gap: 20px;
+}
+
+.projectImage{
+    height: auto;
+    width: 100%;
+    padding: 10px;
+}
+
+.moreContainer{
+    grid-column: span 3;
+    padding: 20px;
+}
+
+#more{
+    display: block;
+    width: 100%;
+}
+
+
+
+
+
+/*Footer*/
+footer{
+    display: flex;
+    padding: 1%;
+    justify-content:center;
+}
+
+.socials{
+    list-style-type: none;
+    padding: 0%;
+}
+
+.socials li{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.socials img{
+    width: 50px;
+}
+
+.socials img:hover{
+    opacity: 0.5;
+}
+
+#email{
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px){
+    .projects{
+        grid-template-columns: 1fr;
+    }
+
+    .aboutMe{
+        grid-template-columns: 1fr;
+        
+    }
+
+    #myPicture{
+        display: grid;
+    place-items: center; 
+    height: 10%; 
+    }
+
+    #projectHeading{
+        margin-top: 20px;
+    }
+    hr{
+        margin-top: 20px;
+    }
+
+
+}
